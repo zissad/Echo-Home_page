@@ -7,7 +7,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100vw;
-  /* height: 1000vh; */
   /* overflow: hidden; */
   background: #fff;
 }
@@ -91,6 +90,17 @@ body {
    font-weight: 700;
    font-family: 'Montserrat', sans-serif;
  }
+ h3 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   color: var(--BlackText);
+ }
+ h4 {
+   font-size: 14px;
+   font-weight: 700;
+   font-family: "Open Sans", sans-serif;
+ }
  .paragraph {
    font-size: 14px;
    color: var(--secondaryTextColor);
@@ -149,6 +159,18 @@ nav {
   justify-content: center;
   align-items: center;
 }
+nav .container i {
+  transition:  all 0.4s ease;
+  position: relative;
+  z-index: 4;
+  font-size: 28px;
+  color: #111;
+  cursor: pointer;
+  display: none;
+}
+nav .container i.active {
+  color: #fff;
+}
 nav .container {
   display: flex;
   justify-content: space-between;
@@ -182,7 +204,7 @@ nav .container ul li a {
   display: flex;
   align-items: center;
 }
-.hero-section::after {
+/* .hero-section::after {
   position: absolute;
   content: "";
   right: -200px;
@@ -192,7 +214,7 @@ nav .container ul li a {
   width: 1113.97px;
   height: 850.62px;
   z-index: -1;
-}
+} */
 .hero-section .container {
   display: flex;
   justify-content: space-between;
@@ -216,5 +238,318 @@ nav .container ul li a {
 
 
 /* ==============Features Section============== */
-
+.features .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.features .container p {
+  text-align: center;
+}
+.features .container h1 {
+  margin: 20px 0;
+}
+.features .container .Bx-container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.features .container .Bx-container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 250px;
+}
+.features .container .Bx-container .box h3 {
+  margin: 10px 0;
+}
+.features .container .Bx-container .box img {
+  width: 50px;
+}
+.features .container .Bx-container .box .im-Bx {
+  position: relative;
+}
+.features .container .Bx-container .box .im-Bx .circle{
+  position: absolute;
+  z-index: -1;
+  right: -15px;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(251, 178, 68, 0.5);
+  border-radius: 50%;
+}
 /* ==============Features Section============== */
+
+/* ==============Agency Section============== */
+.agency {
+  margin-top: 120px;
+}
+.agency .container {
+  display: flex;
+  justify-content: space-between;
+}
+.agency .container img {
+  width: 60%;
+  height: auto;
+}
+.agency .container .agency-right {
+  width: 35%;
+}
+.agency .container .agency-right h1 {
+  margin: 20px 0;
+}
+.agency .container .agency-right ul {
+  margin-top: 20px;
+}
+.agency .container .agency-right ul li {
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+  line-height: 25px;
+}
+.agency .container .agency-right ul li i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: rgb(39, 248, 67);
+  font-weight: bold;
+}
+.agency .container .agency-right a button {
+  margin-top: 40px;
+}
+/* ==============Agency Section============== */
+
+
+/* ==============Services Section============== */
+.service {
+  margin-top: 120px;
+}
+.service .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service .container .Bx-container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.service .container .Bx-container .box {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 1px solid #efefef;
+  height: 180px;
+}
+.service .container .Bx-container .box p {
+  text-align: center;
+}
+.service .container .Bx-container .box h3 {
+  margin: 10px 0;
+}
+.service .container .Bx-container .box img {
+  width: 50px;
+}
+.service .container .Bx-container .box .im-Bx {
+  margin-top: 30px;
+  position: relative;
+}
+.service .container .Bx-container .box .im-Bx .circle{
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(251, 178, 68, 0.5);
+  border-radius: 50%;
+}
+.service .container .Bx-container .box .Bx-text {
+  margin-left: 40px;
+}
+.service .container .Bx-container .box .Bx-text p {
+  text-align: start;
+}
+/* ==============Services Section============== */
+
+
+/* ==============Testimonial Section============== */
+.testimonial {
+  background: #F8F9FA;
+  margin-top: 120px;
+}
+.testimonial .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .container p {
+  text-align: center;
+}
+.testimonial .container h1 {
+  margin: 20px 0;
+}
+.testimonial .container .tex-type {
+  margin-top: 80px;
+}
+.testimonial .container .slider-slider-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.testimonial .container .slider-slider-container::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.testimonial .container .left-btn,
+.testimonial .container .right-btn {
+  color: var(--secondaryTextColor);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid var(--secondaryTextColor);
+  z-index: 2;
+  transition: 0.3s;
+}
+.testimonial .container .left-btn {
+  position: absolute;
+  top: 250px;
+  right: 70px;
+}
+.testimonial .container .right-btn {
+  position: absolute;
+  top: 250px;
+  right: 20px;
+}
+.testimonial .container .left-btn:hover,
+.testimonial .container .right-btn:hover {
+  background: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  color: #fff;
+} 
+.testimonial .container .slider-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  width: 4230px;
+}
+.testimonial .container .slider-container .box {
+  width: 450px;
+  user-select: none;
+  height: 250px;
+  background: #fff;
+  padding: 40px;
+  text-align: left;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-right: 10px;
+}
+.testimonial .container .slider-container .box p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: var(--secondaryTextColor);
+  line-height: 1.5;
+}
+.testimonial .container .slider-container .box .auth {
+  display: flex;
+  margin-top: 30px;
+}
+.testimonial .container .slider-container .box .auth img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.testimonial .container .slider-container .box .auth p {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #444;
+  margin-left: 15px;
+}
+.testimonial .container .slider-container .box .auth p span {
+  color: var(--secondaryTextColor);
+  font-size: 14px;
+}
+.testimonial .container .radio-container {
+  display: flex;
+  margin-top: 20px;
+    margin-bottom: 120px;
+}
+.testimonial .container .radio-container .radio-btn {
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--secondaryTextColor);
+  cursor: pointer;
+}
+.testimonial .container .radio-container .radio-btn.active {
+  background: #222;
+}
+/* ==============Testimonial Section============== */
+
+
+/* ==============Footer Section============== */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-gap: 40px;
+}
+.footer .container .first p {
+ margin: 20px 0;
+ font-size: 14px;
+}
+.footer .container .first .ico {
+  display: flex;
+}
+.footer .container .first i {
+  font-size: 16px;
+  margin: 5px;
+  background: var(--primaryColor);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.footer .container .first .fa-facebook-f {
+  padding: 10px 13px;
+}
+.footer .container .first .fa-instagram {
+  padding: 10px 11px;
+}
+.footer .container ul {
+  margin-top: 10px;
+}
+.footer .container ul li{
+    line-height: 30px;
+
+}
+.footer .container ul li a i {
+  margin-right: 10px;
+}
+.footer .container ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+/* ==============Footer Section============== */
